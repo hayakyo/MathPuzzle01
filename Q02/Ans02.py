@@ -13,5 +13,5 @@ for x in range(1000, 10000):
                     y = eval(cal_str)
                     if x_str[::-1] == str(int(y)):
                         print(x_str, cal_str, y)
-                except:
+                except (NameError, ZeroDivisionError, SyntaxError):
                     continue
