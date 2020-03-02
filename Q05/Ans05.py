@@ -5,7 +5,6 @@ count = 0
 
 for i in itertools.combinations_with_replacement(coinType, r=15):
     if sum(i) == 1000:
-        print(i)
         count += 1
 
 print(count)
