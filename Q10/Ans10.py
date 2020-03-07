@@ -16,7 +16,6 @@ def sum_max(n, roulette_type):
 
 cnt = 0
 for n in range(2, 37):
-    print(sum_max(n, european), sum_max(n, american))
     if sum_max(n, european) < sum_max(n, american):
         cnt += 1
 
