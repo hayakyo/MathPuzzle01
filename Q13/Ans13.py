@@ -7,6 +7,7 @@ nums = list(re.split(r"[^a-zA-Z]", expression))
 chars = list(set(list("".join(nums))))
 head = [num[0] for num in nums if num != ""]
 
+
 count = 0
 for seq in itertools.permutations(list(range(10)), len(chars)):
     is_zero_first = False
